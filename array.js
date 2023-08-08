@@ -1,97 +1,46 @@
-//function declaration////
+var list = ["tige","cat","bird","bat"];
+console.log(list);
 
 
-// function fname(ram){
-//     console.log("hey ram");
-//  }
-//  fname();
+var list = [
+    ["tige","cat","bird","bat"]
+];
 
- //function exprrsssion//
+console.log(list[0][2]); //answwer will be bird
 
-//  let a = function(){     ///anonymous function
-//     console.log("hiii")
-//  }
-//  a();
+list.shift(); ///tiger
 
+//list = ["cat","bird","bat"]
 
-//  function sing(){
-//     console.log("aaaaaaaaaa");
-//     console.log("taaaaaaaaaaaa");
-//  }
-//  sing();
+list.push("dog"); //list =["cat","bird","bat","dog"]
+ list.pop("dog"); //list =   ["cat","bird","bat"]
+list.concat(["bee","boo"]); //["cat","bird","bat","bee","boo"]
+ list.sort() // list = ["bird","bat"]
 
 
+ //erxercise on array ///
+
+ var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+ // 1. Remove the Banana from the array.
+ array.splice(0,1); //list = ["Apples", "Oranges", "Blueberries"];
 
 
-//adding argument to function///
-//  function sing(song){
-//     console.log(song);
-//  }
-//  sing("aaaaaaaa");
-//  sing("fadfsdfd");
+// 2. Sort the array in order.
+array.sort(); // list = ["Apples",  "Blueberries","Oranges"];
 
 
-
-//  function multiply(a,b){
-//       return  a * b;
-   
-//  }
-//  multiply(5,10);
+ // 3. Put "Kiwi" at the end of the array.
+ array.push("kiwi");  // list = ["Apples", "Oranges", "Blueberries","kiwi"];
 
 
-//  function add(a,b){
-//     if( a > 10 || b > 10){
-//         return "thats so hard";
-//     }else{
-//         return a+b;
-//     }
-//  }
-//  add(5,10); 
+// 4. Remove "Apples" from the array.
+array.slice(1);
 
+// 5. Sort the array in reverse order. (Not alphabetical, but reverse
+// the current Array i.e. ['a', 'c', 'b'] becomes ['b', 'c', 'a'])
+ array.reverse();
 
- //exercise on function//
-// function checKdriverAge(){
-//     var age = prompt("enter the age");
-//     if(Number(age)< 18){
-//         alert("Sorry, you are too yound to drive this car. Powering off");
-//     } else if(Number(age)>18){
-//         alert("Powering On. Enjoy the ride!");
-
-//     }else if(Number(age)===18){
-//         alert("Congratulations on your first year of driving. Enjoy the ride!");
-//     }
-// }
-
-// checKdriverAge();
-
-
-//2.solve above problem using function exprrsssion//
-var checKdriverAge2 = function(){
-    var age = prompt("enter the age");
-    if(Number(age)< 18){
-        alert("Sorry, you are too yound to drive this car. Powering off");
-    } else if(Number(age)>18){
-        alert("Powering On. Enjoy the ride!");
-
-    }else if(Number(age)===18){
-        alert("Congratulations on your first year of driving. Enjoy the ride!");
-    }
-}
-
-checKdriverAge2();
-
-
-//3.
-function checKdriverAge2(age){
-
-    if(Number(age)< 18){
-        return "Sorry, you are too yound to drive this car. Powering off";
-    } else if(Number(age)>18){
-         return "Powering On. Enjoy the ride!";
-
-    }else if(Number(age)===18){
-       return "Congratulations on your first year of driving. Enjoy the ride!";
-    }
-}
-
-checKdriverAge2(92);
+ using this array,
+ // var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+ // access "Oranges".
